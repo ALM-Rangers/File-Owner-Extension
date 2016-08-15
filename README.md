@@ -39,7 +39,7 @@ We thank the following contributors for this extension: Abel Wang, Wouter de Kor
 Notices for certain third party software included in this solution are provided here: [Third Party Notice](ThirdPartyNotices.txt).
 
 ##Contribute
-Contributions to Show Area Path Dependencies are welcome. Here is how you can contribute:  
+Contributions to File Owner are welcome. Here is how you can contribute:  
 
 - Submit bugs and help us verify fixes  
 - Submit pull requests for bug fixes and features and discuss existing proposals   
