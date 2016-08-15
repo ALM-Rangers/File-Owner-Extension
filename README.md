@@ -15,7 +15,7 @@ This extension allows users to quickly and easily determine ownership of a file.
 	
 This extension works with both Git and TFVC repositories.
 
-![Preview](/src/surfaceowner/images/Preview.jpg)
+![Preview](/src/SurfaceOwner/images/Preview.jpg)
 
 ## Quick steps to get started
 1. Browse to the Web portal and select the Code hub.  Then select the Code Explorer
