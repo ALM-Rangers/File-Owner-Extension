@@ -20,16 +20,16 @@ This extension works with both Git and TFVC repositories.
 ## Quick steps to get started
 1. Browse to the Web portal and select the Code hub.  Then select the Code Explorer
 
-    ![Browse To Code Explorer](/src/surfaceowner/images/Step1.jpg)
+    ![Browse To Code Explorer](/src/SurfaceOwner/images/Step1.jpg)
 
 2. Using the tree on the right hand side, browse to the folder you want and then right click the file in the main pane and
 select File owner
 
-	![Right Click File](/src/surfaceowner/images/Step2.jpg)
+	![Right Click File](/src/SurfaceOwner/images/Step2.jpg)
 
 3. This will bring up the File Owners dialog box. Select the file owner from the current owner drop down and click the Close button
 
-	![File Owners Dialog](/src/surfaceowner/images/Step3.jpg)
+	![File Owners Dialog](/src/SurfaceOwner/images/Step3.jpg)
 
 ## Learn more
 
