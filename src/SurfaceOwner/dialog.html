@@ -1,0 +1,161 @@
+﻿<!-----------------------------------------------------------------------
+ <copyright file="dialog.html">
+    This code is licensed under the MIT License.
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF
+    ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+    TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+    PARTICULAR PURPOSE AND NONINFRINGEMENT.
+</copyright>
+<summary>
+    Content of the dialog that gets shown when the user wants file owner 
+    information
+</summary>
+----------------------------------------------------------------------->
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>File Properties</title>
+    <link href="css/dialog.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" type="text/css" href="css/msdropdown/dd.css" />
+    <link rel="stylesheet" type="text/css" href="css/msdropdown/flags.css" />
+    <link rel="stylesheet" type="text/css" href="css/msdropdown/skin2.css" />
+    <link rel="stylesheet" type="text/css" href="css/msdropdown/sprite.css" />
+</head>
+<body>
+    <div id="loadingMessage">Loading file data...</div>
+    <div id="dialogWindow" style="display: none;">
+
+        <table style="width:410px">
+            <tr>
+                <td style="width: 110px;">
+                    Filename:
+                </td>
+                <td>
+                    <span id="fileName"></span>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    Size:
+                </td>
+                <td>
+                    <span id="size"></span>
+                </td>
+            </tr>
+        </table>
+
+        <hr size="2" />
+
+        <table>
+            <tr style="width: 110px;">
+                <td>
+                    Created by:
+                </td>
+                <td>
+                    <img id="createdByImage" class="userInfoImageClass" src="" />
+                    <div class="userInfoLineClass"><span id="createdByUser"></span> (<a id="createdByUserEmail" href="">email</a>)</div>
+                    <div id="createdByDate" class="userInfoLineClass"></div>
+                </td>
+            </tr>
+            <tr>
+                <td style="width: 110px;">
+                    Initial comments:
+                </td>
+                <td id="createdByComment">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <span id="changesetLabel"></span>
+                </td>
+                <td>
+                    <a id="createdByChangeset" href=""></a>
+                </td>
+            </tr>
+        </table>
+
+        <hr size="2" />
+
+        <!--<table style="width:410px">
+            <tr>
+                <td>
+                    Current owner:
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="currentOwnerDropDown"></div>
+                </td>
+            </tr>
+        </table>-->
+
+        <br />
+        <div>Suggested owners:</div>
+        <table>
+            <tr>
+                <td style="width:555px">
+                    <div id="mostContributed">
+                        <img id="mostContributedImage" class="userInfoImageClass" src="/images/logo_small.png" />
+                        <div class="userInfoLineClass"><span id="mostContributedUser"></span> (<a id="mostContributedUserEmail" href="">email</a>)</div>
+                        <div class="userInfoLineClass"><i>Has recently made the most contributions  to the file.</i></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="recentlyReviewed">
+                        <img id="recentlyReviewedImage" class="userInfoImageClass" src="/images/logo_small.png" />
+                        <div class="userInfoLineClass"><span id="recentlyReviewedUser">Not Implimented</span> (<a id="recentlyReviewedEmail" href="">email</a>)</div>
+                        <div class="userInfoLineClass"><i>Has recently reviewed the file.</i></div>
+                    </div>
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="mostContributionsToFolder">
+                        <img id="mostContributionsToFolderImage" class="userInfoImageClass" src="/images/logo_small.png" />
+                        <div class="userInfoLineClass"><span id="mostContributionsToFolderUser"></span> (<a id="mostContributionsToFolderEmail" href="">email</a>)</div>
+                        <div class="userInfoLineClass"><i>Has recently made the most contributions to the files in the same folder.</i></div>
+                    </div>
+                </td>
+            </tr>
+        </table>
+
+
+
+    </div>
+
+
+
+
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.8.18/jquery-ui.min.js"></script>
+
+    <script type="text/javascript" src="sdk/scripts/VSS.SDK.js"></script>
+    <script src="scripts/ai.0.22.19-build00125.min.js"></script>
+    <script type="text/javascript" src="js/msdropdown/jquery.dd.min.js"></script>
+
+    <script type="text/javascript">
+        VSS.init({
+            explicitNotifyLoaded: true,
+            usePlatformScripts: true,
+            usePlatformStyles: true,
+            moduleLoaderConfig: {
+                paths: {
+                    "Scripts": "scripts"
+                }
+            }
+        });
+
+        VSS.ready(function () {
+            VSS.require(["Scripts/MD5Hasher", "Scripts/UsersRawRestClient", "Scripts/User", "Scripts/Owner", "Scripts/OwnerTotalListGit", "Scripts/OwnerTotalList", "Scripts/ProcessFileValues", "Scripts/IVCManager", "Scripts/TFVCManager", "Scripts/GitVCManager", "Scripts/SurfaceOwnerDialogView", "Scripts/SurfaceOwnerDialogPresenter", "Scripts/TFVCRawRestClient"],
+                function (md5Hasher, usersRawRestClient, user, owner, ownerTotalList, ownerTotalListGit, processFileValues, iVCManager, tFVCManager, gitVCManager, surfaceOwnerDialogView, dialogPresenter, tfvcRawRestClient) {
+
+                    
+            });
+
+        });
+    </script>
+</body>
+</html>

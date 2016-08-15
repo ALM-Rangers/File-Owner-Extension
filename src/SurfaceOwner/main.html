@@ -1,0 +1,42 @@
+﻿<!-----------------------------------------------------------------------
+<copyright file="main.html">
+    This code is licensed under the MIT License.
+    THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF
+    ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED
+    TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A
+    PARTICULAR PURPOSE AND NONINFRINGEMENT.
+</copyright>
+<summary>
+    The content of this file is loaded by VSO to load the extension. 
+    This file loads the required scripts and initializes the file owner extension SDK.
+</summary>
+----------------------------------------------------------------------->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Folder Management</title>
+    <!--
+    To collect end-user usage analytics about your application,
+    insert the following script into each page you want to track.
+    Place this code immediately before the closing </head> tag,
+    and before any other scripts. Your first data will appear
+    automatically in just a few seconds.
+    -->
+    
+</head>
+<body>
+    <div>Users will never see this page.</div>
+
+    <script src="sdk/scripts/VSS.SDK.js"></script>
+    <script src="scripts/main.js"></script>
+    <script src="scripts/ai.0.22.19-build00125.min.js"></script>
+    <script>
+        VSS.init({
+            setupModuleLoader: true,
+            usePlatformScripts: true,
+            usePlatformStyles: true
+        });
+    </script>
+</body>
+</html>

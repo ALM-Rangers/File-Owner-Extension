@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.Default.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <ProjectGuid>{C3404025-CA05-4E97-9C50-8581AC0C5361}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <OutputPath>bin</OutputPath>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <DebugType>full</DebugType>
+    <DebugSymbols>true</DebugSymbols>
+    <TypeScriptToolsVersion>1.8</TypeScriptToolsVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort>44300</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+  </PropertyGroup>
+  <ItemGroup>
+    <Service Include="{4A0DDDB5-7A95-4FBF-97CC-616D07737A77}" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="css\dialog.css" />
+    <Content Include="css\msdropdown\dd.css" />
+    <Content Include="css\msdropdown\flags.css" />
+    <Content Include="css\msdropdown\skin2.css" />
+    <Content Include="css\msdropdown\sprite.css" />
+    <Content Include="dialog.html" />
+    <Content Include="images\logo.png" />
+    <Content Include="images\logo_default.png" />
+    <Content Include="images\logo_small.png" />
+    <Content Include="images\logo_wide.png" />
+    <Content Include="images\msdropdown\icons\1273404841_tick_16.png" />
+    <Content Include="images\msdropdown\icons\Amex-56.png" />
+    <Content Include="images\msdropdown\icons\blank.gif" />
+    <Content Include="images\msdropdown\icons\browser-chrome.png" />
+    <Content Include="images\msdropdown\icons\browser-firefox.png" />
+    <Content Include="images\msdropdown\icons\browser-msie.png" />
+    <Content Include="images\msdropdown\icons\browser-opera.png" />
+    <Content Include="images\msdropdown\icons\browser-safari.png" />
+    <Content Include="images\msdropdown\icons\button-large.gif" />
+    <Content Include="images\msdropdown\icons\Cash-56.png" />
+    <Content Include="images\msdropdown\icons\demoaction.jpg" />
+    <Content Include="images\msdropdown\icons\Discover-56.png" />
+    <Content Include="images\msdropdown\icons\enabled.gif" />
+    <Content Include="images\msdropdown\icons\flagssprite_small.png" />
+    <Content Include="images\msdropdown\icons\giftlelo_dot_com.jpg" />
+    <Content Include="images\msdropdown\icons\icon-search.gif" />
+    <Content Include="images\msdropdown\icons\icon_calendar.gif" />
+    <Content Include="images\msdropdown\icons\icon_cart.gif" />
+    <Content Include="images\msdropdown\icons\icon_cd.gif" />
+    <Content Include="images\msdropdown\icons\icon_email.gif" />
+    <Content Include="images\msdropdown\icons\icon_faq.gif" />
+    <Content Include="images\msdropdown\icons\icon_games.gif" />
+    <Content Include="images\msdropdown\icons\icon_lockopen.gif" />
+    <Content Include="images\msdropdown\icons\icon_music.gif" />
+    <Content Include="images\msdropdown\icons\icon_phone.gif" />
+    <Content Include="images\msdropdown\icons\icon_sales.gif" />
+    <Content Include="images\msdropdown\icons\icon_secure.gif" />
+    <Content Include="images\msdropdown\icons\icon_video.gif" />
+    <Content Include="images\msdropdown\icons\jquery-msdropdown.gif" />
+    <Content Include="images\msdropdown\icons\Mastercard-56.png" />
+    <Content Include="images\msdropdown\icons\msDropDown.gif" />
+    <Content Include="images\msdropdown\icons\Paypal-56.png" />
+    <Content Include="images\msdropdown\icons\preview.gif" />
+    <Content Include="images\msdropdown\icons\sprite.gif" />
+    <Content Include="images\msdropdown\icons\sprite.jpg" />
+    <Content Include="images\msdropdown\icons\tick.gif" />
+    <Content Include="images\msdropdown\icons\Visa-56.png" />
+    <Content Include="images\msdropdown\skin1\dd_arrow.gif" />
+    <Content Include="images\msdropdown\skin1\title-bg.gif" />
+    <Content Include="images\msdropdown\skin2\dd_arrow.gif" />
+    <Content Include="images\msdropdown\skin2\icon-ok.gif" />
+    <Content Include="images\msdropdown\skin2\title-bg.gif" />
+    <Content Include="js\jquery\jquery-1.9.0.min.js" />
+    <Content Include="js\jquery\tester.js" />
+    <Content Include="js\msdropdown\jquery.dd.js" />
+    <Content Include="js\msdropdown\jquery.dd.min.js" />
+    <Content Include="main.html" />
+    <Content Include="scripts\ai.0.22.19-build00125.js" />
+    <Content Include="scripts\ai.0.22.19-build00125.min.js" />
+    <Content Include="scripts\GitVCManager.js" />
+    <Content Include="scripts\ISurfaceOwnerDialogView.js" />
+    <Content Include="scripts\IVCManager.js" />
+    <Content Include="scripts\main.js" />
+    <Content Include="scripts\MD5Hasher.js" />
+    <Content Include="scripts\Owner.js" />
+    <Content Include="scripts\OwnerTotalList.js" />
+    <Content Include="scripts\OwnerTotalListGit.js" />
+    <Content Include="scripts\ProcessFileValues.js" />
+    <Content Include="scripts\SurfaceOwnerDialogPresenter.js" />
+    <Content Include="scripts\SurfaceOwnerDialogView.js" />
+    <Content Include="scripts\TFVCManager.js" />
+    <Content Include="scripts\TFVCRawRestClient.js" />
+    <Content Include="scripts\User.js" />
+    <Content Include="scripts\UsersRawRestClient.js" />
+    <Content Include="sdk\scripts\VSS.SDK.js" />
+    <Content Include="ThirdPartyNotices.txt" />
+    <Content Include="web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <TypeScriptCompile Include="scripts\ai.0.22.19-build00125.d.ts" />
+    <TypeScriptCompile Include="scripts\MD5Hasher.ts" />
+    <TypeScriptCompile Include="scripts\Owner.ts" />
+    <TypeScriptCompile Include="scripts\OwnerTotalList.ts" />
+    <TypeScriptCompile Include="scripts\OwnerTotalListGit.ts" />
+    <TypeScriptCompile Include="scripts\ProcessFileValues.ts" />
+    <TypeScriptCompile Include="scripts\SurfaceOwnerDialogPresenter.ts" />
+    <TypeScriptCompile Include="scripts\GitVCManager.ts" />
+    <TypeScriptCompile Include="scripts\ISurfaceOwnerDialogView.ts" />
+    <TypeScriptCompile Include="scripts\IVCManager.ts" />
+    <TypeScriptCompile Include="scripts\main.ts" />
+    <TypeScriptCompile Include="scripts\ref\jquery.d.ts" />
+    <TypeScriptCompile Include="scripts\ref\jquery.dd.d.ts" />
+    <TypeScriptCompile Include="scripts\ref\knockout.d.ts" />
+    <TypeScriptCompile Include="scripts\ref\q.d.ts" />
+    <TypeScriptCompile Include="scripts\ref\VSS.d.ts" />
+    <TypeScriptCompile Include="scripts\SurfaceOwnerDialogView.ts" />
+    <TypeScriptCompile Include="scripts\TelemetryClient.ts" />
+    <TypeScriptCompile Include="scripts\TFVCManager.ts" />
+    <TypeScriptCompile Include="scripts\TFVCRawRestClient.ts" />
+    <TypeScriptCompile Include="scripts\UsersRawRestClient.ts" />
+    <TypeScriptCompile Include="scripts\User.ts" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="vwd.webinfo" />
+    <Content Include="vss-extension.json" />
+    <Content Include="scripts\main.js.map" />
+    <Content Include="scripts\SurfaceOwnerDialogView.js.map" />
+    <Content Include="scripts\IVCManager.js.map" />
+    <Content Include="scripts\TFVCManager.js.map" />
+    <Content Include="scripts\GitVCManager.js.map" />
+    <Content Include="images\msdropdown\icons\Thumbs.db" />
+    <Content Include="scripts\ISurfaceOwnerDialogView.js.map" />
+    <Content Include="scripts\SurfaceOwnerDialogPresenter.js.map" />
+    <Content Include="scripts\User.js.map" />
+    <Content Include="scripts\Owner.js.map" />
+    <Content Include="scripts\OwnerTotalList.js.map" />
+    <Content Include="scripts\OwnerTotalListGit.js.map" />
+    <Content Include="scripts\ProcessFileValues.js.map" />
+    <Content Include="scripts\UsersRawRestClient.js.map" />
+    <Content Include="scripts\MD5Hasher.js.map" />
+    <Content Include="Overview.md" />
+    <Content Include="scripts\TFVCRawRestClient.js.map" />
+    <Content Include="mp_terms.md" />
+    <Content Include="packages.config" />
+    <None Include="web.Debug.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+    <None Include="web.Release.config">
+      <DependentUpon>web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">12.0</VisualStudioVersion>
+  </PropertyGroup>
+  <PropertyGroup>
+    <RootNamespace>FolderManagement</RootNamespace>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\WebApplications\Microsoft.WebApplication.targets')" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>25967</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:25967/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <PropertyGroup Condition="'$(Configuration)' == 'Debug'">
+    <TypeScriptRemoveComments>false</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>True</TypeScriptSourceMap>
+    <TypeScriptModuleKind>amd</TypeScriptModuleKind>
+    <TypeScriptTarget>ES3</TypeScriptTarget>
+    <TypeScriptCompileOnSaveEnabled>True</TypeScriptCompileOnSaveEnabled>
+    <TypeScriptNoImplicitAny>False</TypeScriptNoImplicitAny>
+    <TypeScriptOutFile />
+    <TypeScriptOutDir />
+    <TypeScriptGeneratesDeclarations>False</TypeScriptGeneratesDeclarations>
+    <TypeScriptNoEmitOnError>True</TypeScriptNoEmitOnError>
+    <TypeScriptMapRoot />
+    <TypeScriptSourceRoot />
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)' == 'Release'">
+    <TypeScriptRemoveComments>true</TypeScriptRemoveComments>
+    <TypeScriptSourceMap>false</TypeScriptSourceMap>
+  </PropertyGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets" Condition="Exists('$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)\TypeScript\Microsoft.TypeScript.targets')" />
+</Project>

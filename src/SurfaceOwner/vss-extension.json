@@ -1,0 +1,108 @@
+{
+  "manifestVersion": 1,
+  "id": null,
+  "version": "1.0.7",
+  "publisher": "alm-rangers",
+  "extensionId": "almrangers-vsoextensions-SurfaceOwner",
+  "name": "File owner",
+  "description": "This extension simplifies the process of determining ownership of a file",
+  "icons": {
+    "default": "images/logo_default.png"
+  },
+  "tags": [
+    "Sample"
+  ],
+  "categories": [
+    "Code"
+  ],
+  "branding": {
+    "color": "rgb(51,65,133)",
+    "theme": "dark"
+  },
+
+  "content": {
+    "details": {
+      "path": "Overview.md"
+    },
+    "license": {
+      "path": "mp_terms.md"
+    }
+  },
+
+  "links": {
+    "support": {
+      "uri": "http://aka.ms/vsarcontact"
+    },
+    "issues": {
+      "uri": "https://github.com/ALM-Rangers/File-Owner-Extension/issues"
+    },
+    "repository": {
+      "uri": "https://github.com/ALM-Rangers/File-Owner-Extension"
+    }
+  },
+  
+  "files": [
+    {
+      "path": "css",
+      "addressable": true
+    },
+    {
+      "path": "images",
+      "addressable": true
+    },
+    {
+      "path": "scripts",
+      "addressable": true
+    },
+
+    {
+      "path": "sdk",
+      "addressable": true
+    },
+    {
+      "path": "js",
+      "addressable": true
+    },
+    {
+      "path": "dialog.html",
+      "addressable": true
+    },
+    {
+      "path": "main.html",
+      "addressable": true
+    }
+  ],
+  "galleryFlags": [
+  ],
+  "scopes": [ "vso.code", "vso.work" ],
+  "contributions": [
+    {
+      "id": "surfaceOwnerProperties",
+      "type": "ms.vss-web.action",
+      "description": "Shows the File Owner information for menu actions for the source explorer grid",
+      "targets": [
+        "ms.vss-code-web.source-grid-item-menu"
+      ],
+      "properties": {
+        "text": "File owner",
+        "title": "File owner",
+        "icon": "images/logo_small.png",
+        "group": "actions",
+        "uri": "main.html",
+        "registeredObjectId": "surfaceOwnerProperties"
+      }
+    },
+
+    {
+      "id": "surfaceOwnerPropertiesDialog",
+      "targets": [
+        ".dialog"
+      ],
+      "type": "ms.vss-web.control",
+      "properties": {
+        "uri": "dialog.html"
+      }
+    }
+  ],
+  "targets": [ { "id": "Microsoft.VisualStudio.Services" } ]
+}
