@@ -1,7 +1,7 @@
 {
   "manifestVersion": 1,
   "id": null,
-  "version": "",
+  "version": "0.0.0",
   "publisher": "",
   "extensionId": "FileOwner",
   "name": "File owner",
