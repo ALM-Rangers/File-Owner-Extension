@@ -1,9 +1,9 @@
 {
   "manifestVersion": 1,
   "id": null,
-  "version": "1.0.7",
-  "publisher": "alm-rangers",
-  "extensionId": "almrangers-vsoextensions-SurfaceOwner",
+  "version": "",
+  "publisher": "",
+  "extensionId": "FileOwner",
   "name": "File owner",
   "description": "This extension simplifies the process of determining ownership of a file",
   "icons": {
