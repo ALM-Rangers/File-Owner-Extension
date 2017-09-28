@@ -3,9 +3,7 @@ THIRD-PARTY SOFTWARE NOTICES AND INFORMATION
 Do Not Translate or Localize
 
 
-File Owner Extension incorporates components from the projects listed below. Microsoft licenses these components under the Microsoft software license terms. The original copyright notices and the licenses under which Microsoft received such components are set forth below for informational purposes. Microsoft reserves all rights not expressly granted herein, whether by implication, estoppel or otherwise.
-
-
+File Owner Extension incorporates third party material from the projects listed below. The original copyright notice and the license under which ALM | DevOps Ranger Contributors received such third party material are set forth below. ALM | DevOps Ranger Contributors reserve all other rights not expressly granted, whether by implication, estoppel or otherwise.  
 
 1.	msDropDown  (https://github.com/marghoobsuleman/ms-Dropdown)
 
