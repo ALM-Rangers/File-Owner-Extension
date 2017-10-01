@@ -1,5 +1,10 @@
 ## File owner ##
 
+> **NOTICE** - We’re deprecating this experimental extension.
+> Users who have installed the extension on VSTS or TFS can continue using their version. New installs or downloads are unsupported.
+> The extension will continue to serve as an open source solution and sample extension on [GitHub](https://www.github.com/alm-rangers).
+> Questions? Please see feedback section below.  
+
 This extension allows users to quickly and easily determine ownership of a file.  Given a file, this extension returns the following:
 
 - Name of file
