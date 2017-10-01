@@ -23,6 +23,7 @@ var SurfaceOwnerMenu = (function () {
         if (this.actionContext.gitRepository) {
             sourceControlType = "Git";
         }
+        console.log("File Owner - SC type: " + sourceControlType);
         return sourceControlType;
     };
     //------------------------------------------------------------------------
@@ -38,7 +39,7 @@ var SurfaceOwnerMenu = (function () {
             // variable used to hold the dialog and the options for the dialog box
             var theDialog;
             var dialogOptions = {
-                title: "File owners",
+                title: "File Owners",
                 width: 430,
                 height: 476,
                 draggable: false,
@@ -80,11 +81,12 @@ var SurfaceOwnerMenu = (function () {
         this.showDialog();
     };
     return SurfaceOwnerMenu;
-})();
+}());
 //------------------------------------------------------------------
 // Registers this object for the surfaceOwnerProperties
 //------------------------------------------------------------------
 VSS.register("surfaceOwnerProperties", function (context) {
+    console.log("File Owner - register");
     return new SurfaceOwnerMenu();
 });
 //# sourceMappingURL=main.js.map

@@ -17,5 +17,5 @@ var User = (function () {
         this.image = image;
     }
     return User;
-})();
+}());
 //# sourceMappingURL=User.js.map

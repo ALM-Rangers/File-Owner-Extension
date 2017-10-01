@@ -15,6 +15,10 @@
   "categories": [
     "Code"
   ],
+  "repository": {
+    "type": "git",
+    "uri": "https://github.com/ALM-Rangers/File-Owner-Extension"
+  },
   "branding": {
     "color": "rgb(51,65,133)",
     "theme": "dark"
@@ -40,7 +44,7 @@
       "uri": "https://github.com/ALM-Rangers/File-Owner-Extension"
     }
   },
-  
+
   "files": [
     {
       "path": "css",

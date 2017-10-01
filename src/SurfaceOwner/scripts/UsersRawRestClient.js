@@ -154,5 +154,5 @@ var UsersRawRestClient = (function () {
         return result.promise();
     };
     return UsersRawRestClient;
-})();
+}());
 //# sourceMappingURL=UsersRawRestClient.js.map

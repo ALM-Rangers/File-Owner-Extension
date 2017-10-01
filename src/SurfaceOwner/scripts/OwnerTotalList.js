@@ -54,5 +54,5 @@ var OwnerTotalList = (function () {
         return result.promise();
     };
     return OwnerTotalList;
-})();
+}());
 //# sourceMappingURL=OwnerTotalList.js.map
