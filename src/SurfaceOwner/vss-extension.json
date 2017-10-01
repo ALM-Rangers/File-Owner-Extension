@@ -79,7 +79,7 @@
     {
       "id": "surfaceOwnerProperties",
       "type": "ms.vss-web.action",
-      "description": "Shows the File Owner information for menu actions for the source explorer grid",
+      "description": "Shows the File Owner information for menu actions for the source explorer grid.",
       "targets": [
         "ms.vss-code-web.ms.source-grid-item-menu"
       ],
