@@ -27,6 +27,8 @@ class SurfaceOwnerMenu {
             sourceControlType = "Git";
         }
 
+        console.log("File Owner - SC type: " + sourceControlType);
+
         return sourceControlType;
     }
 
@@ -45,7 +47,7 @@ class SurfaceOwnerMenu {
             // variable used to hold the dialog and the options for the dialog box
             var theDialog;
             var dialogOptions: IHostDialogOptions = {
-                title: "File owners",
+                title: "File Owners",
                 width: 430,
                 height: 476,
                 draggable: false,
@@ -103,5 +105,6 @@ class SurfaceOwnerMenu {
 // Registers this object for the surfaceOwnerProperties
 //------------------------------------------------------------------
 VSS.register("surfaceOwnerProperties", function (context) {
+    console.log("File Owner - register");
     return new SurfaceOwnerMenu();
 });
