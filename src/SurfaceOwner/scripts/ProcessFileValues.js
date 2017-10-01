@@ -14,5 +14,5 @@ var ProcessFileValues = (function () {
         this.hasReviewer = false;
     }
     return ProcessFileValues;
-})();
+}());
 //# sourceMappingURL=ProcessFileValues.js.map

@@ -213,5 +213,5 @@ var MD5Hasher = (function () {
         return temp.toLowerCase();
     };
     return MD5Hasher;
-})();
+}());
 //# sourceMappingURL=MD5Hasher.js.map

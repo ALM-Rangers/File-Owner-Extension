@@ -19,5 +19,5 @@ var Owner = (function () {
         this.imageUrl = imageUrl;
     }
     return Owner;
-})();
+}());
 //# sourceMappingURL=Owner.js.map

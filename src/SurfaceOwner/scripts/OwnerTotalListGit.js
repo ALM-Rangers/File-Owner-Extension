@@ -57,5 +57,5 @@ var OwnerTotalListGit = (function () {
         return result.promise();
     };
     return OwnerTotalListGit;
-})();
+}());
 //# sourceMappingURL=OwnerTotalListGit.js.map
