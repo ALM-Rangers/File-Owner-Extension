@@ -1,4 +1,3 @@
-> ------------------------------------------------------------
 > **NOTICE** - We are deprecating this experimental extension!
 > ------------------------------------------------------------
 > Users who have installed the extension on VSTS or TFS can continue using their version. New installs or downloads are unsupported.
