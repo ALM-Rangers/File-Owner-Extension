@@ -85,8 +85,7 @@
       "type": "ms.vss-web.action",
       "description": "Shows the File Owner information for menu actions for the source explorer grid.",
       "targets": [
-        "ms.vss-code-web.source-grid-item-menu",
-        "ms.vss-code-web.source-tree-item-menu"
+        "ms.vss-code-web.source-item-menu"
       ],
       "properties": {
         "text": "File owner",
