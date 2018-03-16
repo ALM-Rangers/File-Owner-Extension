@@ -10,7 +10,7 @@
 // <summary>Application Insights Client Class</summary>
 //---------------------------------------------------------------------
 Object.defineProperty(exports, "__esModule", { value: true });
-var TelemetryClient = (function () {
+var TelemetryClient = /** @class */ (function () {
     function TelemetryClient() {
     }
     TelemetryClient.getClient = function () {
@@ -21,22 +21,25 @@ var TelemetryClient = (function () {
         return this.telemetryClient;
     };
     TelemetryClient.prototype.Init = function () {
-        try {
-            var snippet = {
-                config: {
-                    instrumentationKey: "__INSTRUMENTATIONKEY__"
-                }
-            };
-            var x = VSS.getExtensionContext();
-            var init = new Microsoft.ApplicationInsights.Initialization(snippet);
-            this.appInsightsClient = init.loadAppInsights();
-            var webContext = VSS.getWebContext();
-            this.appInsightsClient.setAuthenticatedUserContext(webContext.user.id, webContext.collection.id);
-        }
-        catch (e) {
-            this.appInsightsClient = null;
-            console.log(e);
-        }
+        // Disabling telemetry for deprecated extension for GDPR
+        this.appInsightsClient = null;
+        //try {
+        //    var snippet: any = {
+        //        config: {
+        //            instrumentationKey: "__INSTRUMENTATIONKEY__"
+        //        }
+        //    };
+        //    var x = VSS.getExtensionContext();
+        //    var init = new Microsoft.ApplicationInsights.Initialization(snippet);
+        //    this.appInsightsClient = init.loadAppInsights();
+        //    var webContext = VSS.getWebContext();
+        //    this.appInsightsClient.setAuthenticatedUserContext(
+        //        webContext.user.id, webContext.collection.id);
+        //}
+        //catch (e) {
+        //    this.appInsightsClient = null;
+        //    console.log(e);
+        //}
     };
     TelemetryClient.prototype.startTrackPageView = function (name) {
         try {
